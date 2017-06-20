@@ -125,12 +125,12 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-nav>.active>a {
         border-radius: 0;
         color: white;
-        background-color: @theme-primary;
+        background-color: gray;
     }
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
         color: white;
-        background-color: darken(@theme-primary, 10%);
+        background-color: darken(gray, 10%);
     }
 }
 
@@ -175,7 +175,7 @@ header {
     text-align: center;
     color: white;
     .intro-text {
-        padding-top: 100px;
+        padding-top: 176px;
         padding-bottom: 50px;
         .intro-lead-in {
             .serif-font;
@@ -240,7 +240,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        margin: 60px 0 60px 0;
+        // margin: 60px 0 60px 0;
     }
 }
 
@@ -263,7 +263,7 @@ section {
             max-width: 400px;
             margin: 0 auto;
             .portfolio-hover {
-                background: fade(@theme-primary, 90%);
+                background: fade(@theme-primary, 25%);
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -306,8 +306,8 @@ section {
             p {
                 .serif-font;
                 font-style: italic;
-                font-size: 16px;
-                margin: 0;
+                font-size: 12px;
+                margin-top:10px;
             }
         }
     }
@@ -737,4 +737,133 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+.langIconWrapper{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+.langIconWrap{
+  width:16.66667%;
+  text-align: center;
+  margin-top:30px;
+}
+
+.langIcon80{
+  width:80px;
+}
+
+.langIcon35{
+  width:35px;
+}
+
+.iconSub{
+  position: relative;
+}
+
+.imgWrapper{
+  height:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px; }
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+
+  .parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transform: translateX(-50%); }
+
+img .responsive-img{
+  max-width: 100%;
+  height: auto
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+// .animate{
+//   font-size: 12px;
+//   margin: 10px 0 0 10px;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   width: 30em;
+//   animation: type 4s steps(60, end);
+// }
+//
+// .animate:nth-child(2){
+//   animation: type2 8s steps(60, end);
+// }
+//
+// .lineBlink{
+//   animation: blink 1s infinite;
+// }
+//
+// @keyframes type{
+//   from { width: 0; }
+// }
+//
+// @keyframes type2{
+//   0%{width: 0;}
+//   50%{width: 0;}
+//   100%{ width: 100; }
+// }
+//
+// @keyframes blink{
+//   to{opacity: .0;}
+// }
+//
+// ::selection{
+//   background: black;
+// }
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    font-size: 65px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.centerAbout{
+  display: flex;
+  justify-content: center;
 }

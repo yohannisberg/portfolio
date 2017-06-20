@@ -5,7 +5,7 @@ var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
+// var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -42,7 +42,7 @@ gulp.task('minify-css', ['less'], function() {
 // Minify JS
 gulp.task('minify-js', function() {
     return gulp.src('js/agency.js')
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('js'))

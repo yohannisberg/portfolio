@@ -11,7 +11,7 @@ body {
   color: #777777;
 }
 .text-primary {
-  color: #fed136;
+  color: white;
 }
 p {
   font-size: 14px;
@@ -28,13 +28,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #fed136;
+  color: white;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #e6e6e6;
 }
 h1,
 h2,
@@ -57,8 +57,8 @@ h6 {
 }
 .btn-primary {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: white;
+  border-color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -69,8 +69,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -92,17 +92,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: white;
+  border-color: white;
 }
 .btn-primary .badge {
-  color: #fed136;
+  color: white;
   background-color: white;
 }
 .btn-xl {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: white;
+  border-color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -116,8 +116,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -139,11 +139,11 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: white;
+  border-color: white;
 }
 .btn-xl .badge {
-  color: #fed136;
+  color: white;
   background-color: white;
 }
 .navbar-custom {
@@ -151,21 +151,22 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #fed136;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-weight: 700;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #fec503;
+  color: #e6e6e6;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: white;
+  border-color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
@@ -173,7 +174,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: white;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -184,18 +185,18 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #fed136;
+  color: white;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #fed136;
+  background-color: gray;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  background-color: #676767;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -238,7 +239,7 @@ header {
   color: white;
 }
 header .intro-text {
-  padding-top: 100px;
+  padding-top: 176px;
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
@@ -293,11 +294,6 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 75px;
 }
-@media (min-width: 768px) {
-  section {
-    margin: 60px 0 60px 0;
-  }
-}
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -313,7 +309,7 @@ section h3.section-subheading {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(255, 255, 255, 0.25);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -356,8 +352,8 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
-  font-size: 16px;
-  margin: 0;
+  font-size: 12px;
+  margin-top: 10px;
 }
 #portfolio * {
   z-index: 2;
@@ -421,7 +417,7 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #fed136;
+  background-color: white;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
@@ -576,7 +572,7 @@ section#contact .form-group textarea.form-control {
   height: 236px;
 }
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: white;
   box-shadow: none;
 }
 section#contact ::-webkit-input-placeholder {
@@ -645,7 +641,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: white;
 }
 .btn:focus,
 .btn:active,
@@ -729,11 +725,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #fed136;
+  background: white;
 }
 ::selection {
   text-shadow: none;
-  background: #fed136;
+  background: white;
 }
 img::selection {
   background: transparent;
@@ -742,5 +738,98 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #fed136;
+  webkit-tap-highlight-color: white;
+}
+.langIconWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.langIconWrap {
+  width: 16.66667%;
+  text-align: center;
+  margin-top: 30px;
+}
+.langIcon80 {
+  width: 80px;
+}
+.langIcon35 {
+  width: 35px;
+}
+.iconSub {
+  position: relative;
+}
+.imgWrapper {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transform: translateX(-50%);
+}
+img .responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+.typewriter h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 65px;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.centerAbout {
+  display: flex;
+  justify-content: center;
 }
