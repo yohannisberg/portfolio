@@ -33,10 +33,20 @@ gulp.task('minify-css', ['less'], function() {
     return gulp.src('css/agency.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
+});
+
+gulp.task('img', function() {
+    return gulp.src('img/**/*')
+        .pipe(gulp.dest('./dist/img'))
+});
+
+gulp.task('para', function() {
+    return gulp.src('parallax.js-1.4.2/**/*')
+        .pipe(gulp.dest('./dist/parallax.js-1.4.2'))
 });
 
 // Minify JS
@@ -45,7 +55,7 @@ gulp.task('minify-js', function() {
         // .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('./dist/js'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -88,8 +98,18 @@ gulp.task('index', function() {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('build-pictures', function(){
+  return gulp.src('./pictures/**/*')
+    .pipe(gulp.dest('./dist/pictures'))
+});
+
+gulp.task('vendors', function(){
+  return gulp.src('./vendor/**/*')
+    .pipe(gulp.dest('./dist/vendor'))
+});
+
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'index'], function() {
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'index', 'build-pictures', 'img', 'para', 'vendors'], function() {
 
     // return gulp.src('./public/index.html')
 
