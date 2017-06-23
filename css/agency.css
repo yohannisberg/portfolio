@@ -605,6 +605,7 @@ section#contact .text-danger {
   color: #e74c3c;
 }
 footer {
+  background-color: gray;
   padding: 25px 0;
   text-align: center;
 }
