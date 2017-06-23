@@ -836,6 +836,7 @@ img .responsive-img {
   .team-member img {
     margin: 0 auto;
     border: 7px solid white;
+    width: 202px;
   }
   .team-member h4 {
     margin-top: 25px;
@@ -935,4 +936,19 @@ img .responsive-img {
 }
 .navbar-inverse .noggleTest .icon-bar {
   background-color: #fff;
+}
+.resumeButtonWrapper {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.resumeButton {
+  border: 1px solid #65afff;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  width: 65%;
+  border-radius: 3%;
 }
