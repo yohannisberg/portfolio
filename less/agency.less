@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
-    background-color: @gray-darker;
+    background-color: #65AFFF;
     border-color: transparent;
     .navbar-brand {
         color: @theme-primary;
@@ -124,13 +124,14 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-nav>.active>a {
         border-radius: 0;
-        color: white;
-        background-color: gray;
+        color: black;
+        background-color: white;
     }
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
-        color: white;
-        background-color: darken(gray, 10%);
+        color: black;
+        // background-color: darken(gray, 10%);
+        background-color:white;
     }
 }
 
@@ -152,13 +153,15 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 3px;
         }
     }
+
+
 }
 
 // Navbar Change on Scroll
 
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: @gray-darker;
+        background-color: #65AFFF;
         padding: 10px 0;
         .navbar-brand {
             font-size: 1.5em;
@@ -215,26 +218,6 @@ header {
                 margin-bottom: 50px;
             }
         }
-    }
-}
-
-// Global Section Styles
-
-section {
-    padding: 55px 0;
-    h2.section-heading {
-        font-size: 55px;
-        font-weight: 900;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    h3.section-subheading {
-        font-size: 16px;
-        .serif-font;
-        text-transform: none;
-        font-style: italic;
-        font-weight: 400;
-        margin-bottom: 75px;
     }
 }
 
@@ -507,25 +490,6 @@ section {
     }
 }
 
-// Team Section
-
-.team-member {
-    text-align: center;
-    margin-bottom: 50px;
-    img {
-        margin: 0 auto;
-        border: 7px solid white;
-    }
-    h4 {
-        margin-top: 25px;
-        margin-bottom: 0;
-        text-transform: none;
-    }
-    p {
-        margin-top: 0;
-    }
-}
-
 // Clients Aside
 
 aside.clients {
@@ -589,7 +553,7 @@ section#contact {
 // Footer
 
 footer {
-  background-color: gray;
+  background-color: #65AFFF;
     padding: 25px 0;
     text-align: center;
     span.copyright {
@@ -626,7 +590,7 @@ ul.social-buttons {
             &:hover,
             &:focus,
             &:active {
-                background-color: @theme-primary;
+                background-color: gray;
             }
         }
     }
@@ -747,12 +711,6 @@ body {
   align-items: center;
 }
 
-.langIconWrap{
-  width:16.66667%;
-  text-align: center;
-  margin-top:30px;
-}
-
 .langIcon80{
   width:80px;
 }
@@ -841,17 +799,6 @@ img .responsive-img{
 //   background: black;
 // }
 
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-    font-size: 65px;
-}
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -867,4 +814,191 @@ img .responsive-img{
 .centerAbout{
   display: flex;
   justify-content: center;
+}
+
+// .noggleTest{
+//   position: relative;
+// float: left;
+// margin-top: 8px;
+// margin-right: 15px;
+// margin-bottom: 8px;
+// background-color: red;
+// background-image: none;
+// padding: 9px 10px;
+// border-width: 1px;
+// border-style: solid;
+// border-color: transparent;
+// border-image: initial;
+// border-radius: 4px;
+// }
+
+.noggleTest {
+  position: relative;
+  float: left;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 4px;
+}
+.noggleTest:focus {
+  outline: 0;
+}
+.noggleTest .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.noggleTest .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .noggleTest {
+    display: none;
+  }
+
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      font-size: 65px;
+  }
+
+  .langIconWrap{
+    width:16.66667%;
+    text-align: center;
+    margin-top:30px;
+  }
+
+  // Team Section
+
+  .team-member {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+          margin: 0 auto;
+          border: 7px solid white;
+      }
+      h4 {
+          margin-top: 25px;
+          margin-bottom: 0;
+          text-transform: none;
+      }
+      p {
+          margin-top: 0;
+      }
+  }
+
+  // Global Section Styles
+
+  section {
+      padding: 55px 0;
+      h2.section-heading {
+          font-size: 55px;
+          font-weight: 900;
+          margin-top: 0;
+          margin-bottom: 15px;
+      }
+      h3.section-subheading {
+          font-size: 16px;
+          .serif-font;
+          text-transform: none;
+          font-style: italic;
+          font-weight: 400;
+          margin-bottom: 75px;
+      }
+  }
+}
+
+@media (max-width: 769px) {
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      font-size: 25px;
+  }
+
+  .langIconWrap{
+    width:33.3333%;
+    text-align: center;
+    margin-top:30px;
+  }
+
+  // Team Section
+
+  .team-member {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+          margin: 0 auto;
+          border: 7px solid white;
+          width: 162px;
+      }
+      h4 {
+          margin-top: 25px;
+          margin-bottom: 0;
+          text-transform: none;
+      }
+      p {
+          margin-top: 0;
+      }
+  }
+
+  // Global Section Styles
+
+  section {
+      padding: 55px 0;
+      h2.section-heading {
+          font-size: 42px;
+          font-weight: 900;
+          margin-top: 0;
+          margin-bottom: 15px;
+      }
+      h3.section-subheading {
+          font-size: 16px;
+          .serif-font;
+          text-transform: none;
+          font-style: italic;
+          font-weight: 400;
+          margin-bottom: 75px;
+      }
+  }
+}
+
+.navbar-default .noggleTest {
+  border-color: #ddd;
+}
+
+.navbar-default .noggleTest:hover,
+.navbar-default .noggleTest:focus {
+  background-color: #ddd;
+}
+
+.navbar-default .noggleTest .icon-bar {
+  background-color: #888;
+}
+
+.navbar-inverse .noggleTest {
+  border-color: #333;
+}
+
+.navbar-inverse .noggleTest:hover,
+.navbar-inverse .noggleTest:focus {
+  background-color: #333;
+}
+.navbar-inverse .noggleTest .icon-bar {
+  background-color: #fff;
 }

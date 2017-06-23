@@ -5,7 +5,7 @@ var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
-// var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -23,7 +23,7 @@ gulp.task('less', function() {
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -41,6 +41,32 @@ gulp.task('minify-css', ['less'], function() {
         }))
 });
 
+// Minify JS
+gulp.task('minify-js', function() {
+    return gulp.src('js/agency.js')
+        .pipe(uglify())
+        .pipe(header(banner, { pkg: pkg }))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('js'))
+        .pipe(gulp.dest('./dist/js'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+});
+
+// BEGIN WHAT I ADDED
+
+gulp.task('index', function() {
+    return gulp.src('index.html')
+        // .pipe(cachebust.references())
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('build-pictures', function(){
+  return gulp.src('./pictures/**/*')
+    .pipe(gulp.dest('./dist/pictures'))
+});
+
 gulp.task('img', function() {
     return gulp.src('img/**/*')
         .pipe(gulp.dest('./dist/img'))
@@ -51,28 +77,17 @@ gulp.task('para', function() {
         .pipe(gulp.dest('./dist/parallax.js-1.4.2'))
 });
 
-// Minify JS
-gulp.task('minify-js', function() {
-    return gulp.src('js/agency.js')
-        // .pipe(uglify())
-        .pipe(header(banner, { pkg: pkg }))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('js'))
-        .pipe(gulp.dest('./dist/js'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
-});
+// END WHAT I ADDED
 
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
       .pipe(gulp.dest('vendor/bootstrap'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('./dist/vendor/bootstrap'))
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('vendor/jquery'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('vendor/jquery'))
+        .pipe(gulp.dest('./dist/vendor/jquery'))
 
     gulp.src([
             'node_modules/font-awesome/**',
@@ -83,7 +98,7 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.json'
         ])
         .pipe(gulp.dest('vendor/font-awesome'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('./dist/vendor/font-awesome'))
 })
 
 // Run everything
@@ -98,36 +113,14 @@ gulp.task('browserSync', function() {
     })
 })
 
-gulp.task('index', function() {
-    return gulp.src('index.html')
-        // .pipe(cachebust.references())
-        .pipe(gulp.dest('dist'));
-});
-
-gulp.task('build-pictures', function(){
-  return gulp.src('./pictures/**/*')
-    .pipe(gulp.dest('./dist/pictures'))
-});
-
-gulp.task('vendors', function(){
-  return gulp.src('./vendor/**/*')
-    .pipe(gulp.dest('./dist/vendor'))
-});
-
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'index', 'build-pictures', 'img', 'para', 'vendors'], function() {
-
-    return gulp.src('./index.html')
-
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'index', 'build-pictures', 'img', 'para', 'copy'], function() {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);
-
-    // .pipe(gulp.dest('dist'));
-
 });
 
 // Compiles SCSS files from /scss into /css
@@ -137,7 +130,7 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.reload({
             stream: true
         }))

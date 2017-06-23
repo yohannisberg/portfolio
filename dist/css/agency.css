@@ -147,7 +147,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #222222;
+  background-color: #65AFFF;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -190,13 +190,13 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: white;
-  background-color: gray;
+  color: black;
+  background-color: white;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #676767;
+  color: black;
+  background-color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -219,7 +219,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #65AFFF;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -276,23 +276,6 @@ header .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
   }
-}
-section {
-  padding: 55px 0;
-}
-section h2.section-heading {
-  font-size: 55px;
-  font-weight: 900;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-section h3.section-subheading {
-  font-size: 16px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: none;
-  font-style: italic;
-  font-weight: 400;
-  margin-bottom: 75px;
 }
 .service-heading {
   margin: 15px 0;
@@ -530,22 +513,6 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
-.team-member {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid white;
-}
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-.team-member p {
-  margin-top: 0;
-}
 aside.clients img {
   margin: 50px auto;
 }
@@ -605,6 +572,7 @@ section#contact .text-danger {
   color: #e74c3c;
 }
 footer {
+  background-color: #65AFFF;
   padding: 25px 0;
   text-align: center;
 }
@@ -746,11 +714,6 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-.langIconWrap {
-  width: 16.66667%;
-  text-align: center;
-  margin-top: 30px;
-}
 .langIcon80 {
   width: 80px;
 }
@@ -798,18 +761,6 @@ img .responsive-img {
   min-height: 400px;
   background: transparent;
 }
-.typewriter h1 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  font-size: 65px;
-}
 /* The typing effect */
 @keyframes typing {
   from {
@@ -832,4 +783,156 @@ img .responsive-img {
 .centerAbout {
   display: flex;
   justify-content: center;
+}
+.noggleTest {
+  position: relative;
+  float: left;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 4px;
+}
+.noggleTest:focus {
+  outline: 0;
+}
+.noggleTest .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.noggleTest .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media (min-width: 768px) {
+  .noggleTest {
+    display: none;
+  }
+  .typewriter h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    font-size: 65px;
+  }
+  .langIconWrap {
+    width: 16.66667%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .team-member {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .team-member img {
+    margin: 0 auto;
+    border: 7px solid white;
+  }
+  .team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+  .team-member p {
+    margin-top: 0;
+  }
+  section {
+    padding: 55px 0;
+  }
+  section h2.section-heading {
+    font-size: 55px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  section h3.section-subheading {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 769px) {
+  .typewriter h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    font-size: 25px;
+  }
+  .langIconWrap {
+    width: 33.3333%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .team-member {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .team-member img {
+    margin: 0 auto;
+    border: 7px solid white;
+    width: 162px;
+  }
+  .team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+  .team-member p {
+    margin-top: 0;
+  }
+  section {
+    padding: 55px 0;
+  }
+  section h2.section-heading {
+    font-size: 42px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  section h3.section-subheading {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px;
+  }
+}
+.navbar-default .noggleTest {
+  border-color: #ddd;
+}
+.navbar-default .noggleTest:hover,
+.navbar-default .noggleTest:focus {
+  background-color: #ddd;
+}
+.navbar-default .noggleTest .icon-bar {
+  background-color: #888;
+}
+.navbar-inverse .noggleTest {
+  border-color: #333;
+}
+.navbar-inverse .noggleTest:hover,
+.navbar-inverse .noggleTest:focus {
+  background-color: #333;
+}
+.navbar-inverse .noggleTest .icon-bar {
+  background-color: #fff;
 }
