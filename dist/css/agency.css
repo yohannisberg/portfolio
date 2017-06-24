@@ -9,6 +9,7 @@ body {
 }
 .text-muted {
   color: #777777;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-primary {
   color: white;
@@ -327,14 +328,14 @@ header .intro-text .intro-heading {
   background-color: white;
   text-align: center;
   padding: 25px;
+  height: 225px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
 }
 #portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   margin-top: 10px;
 }
@@ -722,6 +723,7 @@ body {
 }
 .iconSub {
   position: relative;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .imgWrapper {
   height: 100px;
