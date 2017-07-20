@@ -265,12 +265,12 @@
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
-        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Portfolio</h2>
                 </div>
             </div>
+            <div class='portfolioWebDevSub'>Web Development</div>
             <div class="row">
               <!-- col-md-4 -->
               <div class="col-lg-6 col-sm-6 portfolio-item">
@@ -284,10 +284,17 @@
                       <div class='portfolioLinksWrapper'>
                         <div class='portfolioLinks'><a href='http://tested-writing.surge.sh/#!/' target="_blank">Live site</a></div>
                         <div class='portfolioLinks'><a href='https://github.com/yohannisberg/purelyByChance' target="_blank">GitHub</a></div>
-                        <div class='portfolioLinks'><a href='' target="_blank">Video Tour</div>
+                        <div class='portfolioLinks comingSoon'>Video Tour Coming Soon</div>
                       </div>
 
-                      <p class="text-muted">User can find upcoming events involving Purely By Chance Farm products, directions to the farm, and a contact form that can be submitted.</p>
+                      <p class="text-muted">
+                        I redesigned my Aunt's farm's website- see her original website here: <a href="http://www.purelybychance.com/" target="_blank" class="text-muted oldPBCLink" >http://www.purelybychance.com/</a>
+                        <br>
+                      </p>
+
+                        <p class="text-muted"><b>Technologies:</b> AngularJS, Google Maps API, Git, Gulp, CSS & HTML</p>
+
+                        <p class="text-muted">User can find upcoming events involving Purely By Chance Farm products, directions to the farm, and a contact form that can be submitted.</p>
                       <p></p>
                   </div>
               </div>
@@ -302,12 +309,18 @@
                         <div class='portfolioLinksWrapper'>
                           <div class='portfolioLinks'><a href='http://54.183.236.56:3012/#!/' target="_blank">Live site</a></div>
                           <div class='portfolioLinks'><a href='https://github.com/DM21-Project/DM21-Group' target="_blank">GitHub</a></div>
-                          <div class='portfolioLinks'><a href='https://www.youtube.com/watch?v=YLsPgNy84p4' target="_blank">Video Tour</div>
+                          <div class='portfolioLinks'><a href='https://www.youtube.com/watch?v=YLsPgNy84p4' target="_blank">Video Tour</a></div>
                         </div>
+                        <div class='displayDescription'>
 
-                        <p class="text-muted">User can sign in to their Vimeo account, upload a video, search for videos, and add comments to video (comments posted through our clone will post on real Vimeo website).</p>
-                        <p></p>
-                    </div>
+                        <p class="text-muted">I designed the back-end endpoints and the front-end state management</p>
+
+                        <p class="text-muted"><b>Technologies:</b> AngularJS, PostgreSQL, Node.js, Express.js, Git, Gulp, CSS & HTML</p>
+
+                        <p class="text-muted"><b>Functionality: </b>User can sign in to their Vimeo account, upload/search videos, and post comments (comments posted through our clone will post on real Vimeo website).</p>
+                  </div>
+                </div>
+
                 </div>
                 <div class="col-lg-6 col-sm-6 portfolio-item">
                     <a href="http://familyvideo.jdagostino.com/#!/" class="portfolio-link" target="_blank">
@@ -328,7 +341,11 @@
                           <div class='portfolioLinks'><a href='https://www.youtube.com/watch?v=Dg6Btqb-wHw&feature=youtu.be' target="_blank">Video Tour</a></div>
                         </div>
 
-                        <p class="text-muted">User can create an account, sign in, search for items (items provided by the Movie Database API), add/delete items from their shopping cart, and empty their shopping cart by going through a check out process.</p>
+                        <p class="text-muted">For the accounts/shopping cart functionality, I created database tables utilizing a foreign key</p>
+
+                        <p class="text-muted"><b>Technologies:</b> AngularJS, PostgreSQL, Git, Gulp, Node.js, Express.js, CSS & HTML</p>
+
+                        <p class="text-muted"><b>Functionality:</b> User can create an account, sign in, search (items provided by Movie Database API), add/delete items from shopping cart, and empty shopping cart by going through a check out process.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 portfolio-item">
@@ -347,54 +364,42 @@
                           <div class='portfolioLinks'><a href='https://github.com/yohannisberg/apsWebsite' target="_blank">GitHub</a></div>
                           <div class='portfolioLinks'><a href='https://www.youtube.com/watch?v=4yVNHAhaCMw' target="_blank">Video Tour</a></div>
                         </div>
+                        <div class='displayDescription'>
+                        <p class="text-muted"> Completed in a weekend to practice HTML/CSS styling</p>
 
-                        <p class="text-muted">A website for the band A.P.S.  User can find information regarding the band's recorded music and events.</p>
+                        <p class="text-muted"><b>Technologies:</b> AngularJS, CSS & HTML</p>
+
+                        <p class="text-muted"><b>Functionality:</b> User can find information regarding the band's recorded music and events.</p>
                     </div>
+                  </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <!-- <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+
+                <!-- <div class='portfolioWebDevSub'>Video Editing & Voiceover</div>
+
+                <div class="col-lg-6 col-sm-6 portfolio-item portDisplay">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                     <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
+                        <!-- width="560" height="315"
+                        <div class='row videoCentered'>
+                        <iframe class='col-lg-12 col-md-12 col-sm-12' src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FFamilyVideo%2Fvideos%2F10154883071658074%2F&show_text=0"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" width="400" height="255"></iframe>
+                      </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+
+                <div class="col-lg-6 col-sm-6 portfolio-item portDisplay">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
+                         width="560" height="315"
+                        <div class='row videoCentered'>
+        <iframe class='col-lg-12 col-md-12 col-sm-12' src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FFamilyVideo%2Fvideos%2F10154827291003074%2F&show_text=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" width="400" height="255"></iframe>
+                      </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div> -->
-            </div>
-        </div>
+
+        </div> -->
+
     </section>
 
     <!-- Team Section -->

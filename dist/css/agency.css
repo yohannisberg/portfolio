@@ -328,7 +328,7 @@ header .intro-text .intro-heading {
   background-color: white;
   text-align: center;
   padding: 25px;
-  height: 175px;
+  height: 290px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
@@ -972,4 +972,35 @@ img .responsive-img {
 .portfolioLinks a {
   text-decoration: none;
   color: #65afff;
+}
+.portfolioWebDevSub {
+  text-align: center;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.videoCentered {
+  text-align: center;
+  max-width: 400px;
+}
+.portDisplay {
+  display: flex;
+  justify-content: center;
+}
+.comingSoon {
+  color: red !important;
+  cursor: auto !important;
+}
+.oldPBCLink {
+  cursor: pointer;
+  color: #65afff;
+}
+.displayDescription {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 86%;
+  justify-content: center;
 }
