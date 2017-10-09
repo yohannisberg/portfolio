@@ -1004,3 +1004,6 @@ img .responsive-img {
   height: 86%;
   justify-content: center;
 }
+.img-border-shadow {
+  box-shadow: 1px 1px 25px gray;
+}
