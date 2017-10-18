@@ -1,5 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
+@import "flipper.less";
 
 // Global Components
 
@@ -160,6 +161,22 @@ h1, h2, h3, h4, h5, h6 {
 
 // Navbar Change on Scroll
 
+@media(max-width:767px) {
+    header{
+        background-image: url('../img/IMG_1627.jpg');
+        background-repeat: no-repeat;
+        background-attachment: none;
+        background-position: center bottom;
+        .intro-heading {
+            .heading-font;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 70px;
+        }
+        }
+}
+
 @media(min-width:768px) {
     .navbar-custom.affix {
         background-color: #65AFFF;
@@ -171,10 +188,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+
+    @media(min-width:769px){
+        background-image: url('../img/IMG_1627.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center bottom; 
+
+    .container{
+        height:732px;
+        padding-top:176px;
+    }
+    h1{
+        font-size: 60px;
+        font-weight: 100;
+        span{
+            font-weight: 700;
+        }
+    }
+    }
+
+    @media(max-width:768px){
     background-image: url('../img/IMG_1627.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center bottom;
+    height: 275px;
+    .container{
+        padding-top:76px;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 100;
+        span{
+            font-weight: 700;
+        }
+    }
+    }
+
+    @media(max-width:375px){
+    .container{
+        height: 275px;
+        padding-top:76px;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 100;
+        span{
+            font-weight: 700;
+        }
+    }
+    }
+
     .background-cover;
     text-align: center;
     color: white;
@@ -187,37 +251,6 @@ header {
             font-size: 22px;
             line-height: 22px;
             margin-bottom: 25px;
-        }
-        .intro-heading {
-            .heading-font;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 50px;
-            margin-bottom: 25px;
-        }
-    }
-}
-
-@media(min-width:768px) {
-    header {
-        .intro-text {
-            // padding-top: 300px;
-            // padding-bottom: 200px;
-            height:732px;
-            .intro-lead-in {
-                .serif-font;
-                font-style: italic;
-                font-size: 40px;
-                line-height: 40px;
-                margin-bottom: 25px;
-            }
-            .intro-heading {
-                .heading-font;
-                font-weight: 700;
-                font-size: 75px;
-                line-height: 75px;
-                margin-bottom: 50px;
-            }
         }
     }
 }
@@ -241,6 +274,7 @@ header {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
+        width:100%;
         .portfolio-link {
             display: block;
             position: relative;
@@ -282,8 +316,8 @@ header {
             margin: 0 auto;
             background-color: white;
             text-align: center;
-            padding: 25px;
-            height: 290px;
+            padding: 25px 25px 1px 25px;
+            // height: 315px;
             h4 {
                 text-transform: none;
                 margin: 0;
@@ -1082,10 +1116,94 @@ color: #65afff;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 86%;
+  // height: 86%;
   justify-content: center;
+
+  :nth-child(1){
+    height:auto;
+  }
+
+  :nth-child(2){
+    height:auto;
+  }
+
+  :nth-child(3){
+    height:auto;
+  }
 }
 
 .img-border-shadow{
        box-shadow: 1px 1px 25px gray;
 }
+
+// Accordions
+
+button.accordion {
+        color: #444;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: .5s;
+        text-align: center;
+        // padding-top:26px;
+        letter-spacing:5px;
+        font-size:31px;
+        // padding:26px 18px 14px 18px;
+        // margin-top: 1px;
+        margin-bottom: -1px;
+        background-color: #ffffff;
+    }
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    button.accordion:hover {
+        background-color: #ffffff;
+    }
+    
+    button.accordion.active {
+        background-color: #ffffff;
+        clip-path: polygon(100% 101%,0 101%,0 16%,45% 16%,50% 0,55% 16%,100% 16%);
+        -webkit-clip-path: polygon(100% 101%,0 101%,0 16%,45% 16%,50% 0,55% 16%,100% 16%);
+        -moz-clip-path: polygon(100% 101%,0 101%,0 16%,45% 16%,50% 0,55% 16%,100% 16%);
+    }
+    
+    /* Style the accordion panel. Note: hidden by default */
+    div.panel {
+        background-color: #ffffff;
+        padding: 0 18px;
+        // display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-bottom:0;
+    }
+    
+    .panel p{
+        font-family: 'Muli';
+        font-weight: 400;
+        font-size:16px;
+        text-align:center;
+        // padding: 10px 15px 50px 15px;
+        line-height: 1.5rem;
+    }
+
+    .port-flex-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-wrap1{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .flex-wrap2{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }

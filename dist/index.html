@@ -77,7 +77,7 @@
     </nav>
 
     <!-- Header -->
-    <header>
+<!--     <header>
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading animate typewriter"><h1>web developer</h1></div>
@@ -86,12 +86,24 @@
                 </h1>
             </div>
         </div>
-    </header>
+    </header> -->
+
+<header>
+    <div class="container">
+    <h1>I love
+        <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "to develop.", "to learn.", "a challenge.", "lamp ;)" ]'>
+        </span>
+    </h1>
+    </div>
+</header>
 
     <!-- About Section -->
     <section id="about" class="bg-light-gray">
         <div class="container">
-            <div class="row">
+            <div class="">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Skills</h2>
                 </div>
@@ -157,6 +169,12 @@
                 </div>
                 <div class="iconSub">Gulp</div>
               </div>
+                <div class="langIconWrap">
+                <div class='imgWrapper'>
+                <img class="langIcon80" src="./pictures/PHPLogo.svg">
+                </div>
+                <div class="iconSub">PHP</div>
+              </div>
               <div class="langIconWrap">
                 <div class='imgWrapper'>
                 <img class="langIcon80" src="./pictures/jquery-icon.png">
@@ -192,12 +210,6 @@
                 <img class="langIcon80" src="./pictures/sony_vegas1600.png">
                 </div>
                 <div class="iconSub">Sony Vegas</div>
-              </div>
-              <div class="langIconWrap">
-                <div class='imgWrapper'>
-                <img class="langIcon80" src="./pictures/responsive-design.png">
-                </div>
-                <div class="iconSub">Responsive Design</div>
               </div>
               <div class="langIconWrap">
                 <div class='imgWrapper'>
@@ -269,10 +281,47 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Portfolio</h2>
                 </div>
-            </div>
+            <!-- </div> -->
             <!-- <div class='portfolioWebDevSub'>Web Development</div> -->
-            <div class="row">
-
+            <!-- <div class="row"> -->
+            <div class="flex-wrap">
+                    <div class="col-lg-6 col-sm-6 portfolio-item">
+                    <!-- <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"> -->
+                    <a href="http://qualityflix.com/films/" target="_blank" class="portfolio-link">
+                            <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                            </div>
+                        <img src="./pictures/qualityFlixBig.png" class="img-responsive img-border-shadow" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Pure Flix / Quality Flix</h4>
+                    <!-- <button class="accordion">...</button> -->
+                        <div id="accordion" class="button-container button-flip3d-vertical1">
+                            <div class="flipper flipper-flip3d-vertical1">
+                            <div class="button button-3d front">
+                            More
+                            </div>
+                            <div class="button button-3d back">
+                            Close
+                            </div>
+                            </div>
+                        </div>
+                    <div class="panel">
+                    <div class="portfolio-item">
+                        <div class='portfolioLinksWrapper'>
+                            <div class='portfolioLinks'><a href='http://qualityflix.com/films/' target="_blank">Live site</a></div>
+                            <div class='portfolioLinks comingSoon'>Video Tour Coming Soon</div>
+                        </div>
+                        <div class='displayDescription'>
+                            <p class="text-muted">I worked with Sandoval's design team to create a page that displayed their work creatively and comprehensively</p>
+                            <p class="text-muted"><b>Technologies:</b> PHP, ScrollReveal.js, Slick Slider, Git, Gulp, CSS & HTML</p>
+                            <p class="text-muted"><b>Functionality: </b>User can read about Sandoval's client and the website created for them.  The slider's hover functionality was built custom for this page.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+            </div>
                     <div class="col-lg-6 col-sm-6 portfolio-item">
                     <!-- <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"> -->
                     <a href="http://sandovaldesign.com/portfolio/lovell-fairchild" target="_blank" class="portfolio-link">
@@ -280,7 +329,7 @@
                             <div class="portfolio-hover-content">
                             </div>
                             </div>
-                        <img src="./pictures/sandoval.png" class="img-responsive img-border-shadow" alt="">
+                        <img src="./pictures/sandovalBig.png" class="img-responsive img-border-shadow" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Sandoval Design & Marketing</h4>
@@ -307,7 +356,7 @@
                             <div class="portfolio-hover-content">
                             </div>
                             </div>
-                        <img src="./pictures/17elements.png" class="img-responsive img-border-shadow" alt="">
+                        <img src="./pictures/17elementsBig.png" class="img-responsive img-border-shadow" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>17 Elements</h4>
@@ -335,7 +384,7 @@
                             <div class="portfolio-hover-content">
                             </div>
                         </div>
-                      <img src="./pictures/purelybychance.png" class="img-responsive img-border-shadow" alt="">
+                      <img src="./pictures/purelybychanceBig.png" class="img-responsive img-border-shadow" alt="">
                   </a>
                   <div class="portfolio-caption">
                       <h4>Purely By Chance Farm</h4>
@@ -343,8 +392,8 @@
                       <div class='portfolioLinksWrapper'>
                         <div class='portfolioLinks'><a href='http://tested-writing.surge.sh/#!/' target="_blank">Live site</a></div>
                         <div class='portfolioLinks'><a href='https://github.com/yohannisberg/purelyByChance' target="_blank">GitHub</a></div>
-                        <div class='portfolioLinks comingSoon'>Video Tour Coming Soon</div>
-                      </div>
+<!--                         <div class='portfolioLinks comingSoon'>Video Tour Coming Soon</div>
+ -->                      </div>
 
                       <p class="text-muted">
                         I redesigned my Aunt's farm's website- see her original website here: <a href="http://www.purelybychance.com/" target="_blank" class="text-muted oldPBCLink" >http://www.purelybychance.com/</a>
@@ -364,7 +413,7 @@
                             <div class="portfolio-hover-content">
                             </div>
                         </div>
-                        <img src="./pictures/vimeo.png" class="img-responsive img-border-shadow" alt="">
+                        <img src="./pictures/vimeoBig.png" class="img-responsive img-border-shadow" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Vimeo.com Clone</h4>
@@ -390,7 +439,7 @@
                             <div class="portfolio-hover-content">
                             </div>
                         </div>
-                        <img src="./pictures/famVid.png" class="img-responsive img-border-shadow" alt="">
+                        <img src="./pictures/famVidBig.png" class="img-responsive img-border-shadow" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>FamilyVideo.com Clone</h4>
@@ -416,7 +465,7 @@
                             <div class="portfolio-hover-content">
                             </div>
                         </div>
-                        <img src="./pictures/aps.png" class="img-responsive img-border-shadow" alt="">
+                        <img src="./pictures/apsBig.png" class="img-responsive img-border-shadow" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>A.P.S. Website</h4>
@@ -461,7 +510,7 @@
                 </div>
 
         </div> -->
-
+</div>
     </section>
 
     <!-- Team Section -->
@@ -720,6 +769,87 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+<!-- Typewriter effect -->
+<script type="text/javascript">
+        var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+
+// Accordion
+
+// var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementById("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    console.log("hihihihilnbvghjnbvghjmnb");
+
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+    </script>
 
 </body>
 
