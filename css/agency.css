@@ -939,6 +939,7 @@ header .intro-text .intro-lead-in {
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
+  margin: 10px 0;
 }
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1568,6 +1569,7 @@ img .responsive-img {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1608,6 +1610,12 @@ img .responsive-img {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+.displayDescription img {
+  width: 276px;
+  position: relative;
+  left: 21px;
+  margin-bottom: 10px;
 }
 .displayDescription :nth-child(1) {
   height: auto;
