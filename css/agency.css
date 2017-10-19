@@ -771,7 +771,7 @@ fieldset[disabled] .btn-xl.active {
   color: black;
   background-color: white;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
@@ -790,7 +790,7 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 3px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   header {
     background-image: url('../img/IMG_1627.jpg');
     background-repeat: no-repeat;
