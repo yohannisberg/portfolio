@@ -1207,22 +1207,47 @@ button.accordion {
     }
 
     .port-flex-wrapper{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        margin-top: 15px;
+        @media(min-width:831px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 15px;
+        }
+
+        @media(max-width:830px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
     }
 
     .flex-wrap1{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+        @media(min-width:831px) {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        @media(max-width:830px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 10px;
+        }
     }
 
     .flex-wrap2{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+        @media(min-width:831px) {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        @media(max-width:830px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 10px;
+        }
     }
 
     .devMtnLogo{
@@ -1234,4 +1259,9 @@ button.accordion {
         width: 60%;
         box-shadow: 1px 1px 25px gray;
         margin: 10px 0;
+    }
+
+    .row{
+        margin-right: 0px;
+        margin-left: 0px;
     }
