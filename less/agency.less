@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
 
     @media(min-width:769px){
-        background-image: url('../img/IMG_1627.jpg');
+        background-image: url('../img/IMG1627forWebHigh.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center bottom; 
@@ -210,7 +210,7 @@ header {
     }
 
     @media(max-width:768px){
-    background-image: url('../img/IMG_1627.jpg');
+    background-image: url('../img/IMG1627forWebHigh.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
     height: 275px;
@@ -275,7 +275,12 @@ header {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
-        width:100%;
+        width:50%;
+
+        @media(max-width:760px) {
+            width: 100%;
+        }
+
         .portfolio-link {
             display: block;
             position: relative;
@@ -1206,11 +1211,18 @@ button.accordion {
         line-height: 1.5rem;
     }
 
+    .portfolio-container{
+        max-width: 1170px !important;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
     .port-flex-wrapper{
         @media(min-width:831px) {
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             margin-top: 15px;
         }
 
@@ -1225,14 +1237,17 @@ button.accordion {
     .flex-wrap1{
         @media(min-width:831px) {
             display: flex;
-            flex-direction: column;
-            width: 50%;
+            flex-direction: row;
+            width: 100%;
+            flex-wrap: wrap;
+
         }
         @media(max-width:830px) {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             width: 100%;
             padding: 0 10px;
+            flex-wrap: wrap;
         }
     }
 
@@ -1264,4 +1279,10 @@ button.accordion {
     .row{
         margin-right: 0px;
         margin-left: 0px;
+    }
+
+    .portfolio-item-inner{
+        margin: 0 0 15px;
+        right: 0;
+        width:100%;
     }

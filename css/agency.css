@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 /*** Import Fonts ***/
@@ -825,7 +825,7 @@ header {
 }
 @media (min-width: 769px) {
   header {
-    background-image: url('../img/IMG_1627.jpg');
+    background-image: url('../img/IMG1627forWebHigh.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
@@ -844,7 +844,7 @@ header {
 }
 @media (max-width: 768px) {
   header {
-    background-image: url('../img/IMG_1627.jpg');
+    background-image: url('../img/IMG1627forWebHigh.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
     height: 275px;
@@ -891,7 +891,12 @@ header .intro-text .intro-lead-in {
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
-  width: 100%;
+  width: 50%;
+}
+@media (max-width: 760px) {
+  #portfolio .portfolio-item {
+    width: 100%;
+  }
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -1676,35 +1681,42 @@ div.panel {
   text-align: center;
   line-height: 1.5rem;
 }
+.portfolio-container {
+  max-width: 1170px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 831px) {
   .port-flex-wrapper {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 830px) {
+  .port-flex-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 831px) {
+  .flex-wrap1 {
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
-  }
-}
-@media (max-width: 830px) {
-  .port-flex-wrapper {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-  }
-}
-@media (min-width: 831px) {
-  .flex-wrap1 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 830px) {
   .flex-wrap1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     padding: 0 10px;
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 831px) {
@@ -1735,4 +1747,9 @@ div.panel {
 .row {
   margin-right: 0px;
   margin-left: 0px;
+}
+.portfolio-item-inner {
+  margin: 0 0 15px;
+  right: 0;
+  width: 100%;
 }
