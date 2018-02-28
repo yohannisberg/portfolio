@@ -946,6 +946,10 @@ header .intro-text .intro-lead-in {
   margin: 0;
   margin: 10px 0;
 }
+#portfolio .portfolio-item .portfolio-caption .type-of-site i {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .3px;
+}
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -1579,12 +1583,31 @@ img .responsive-img {
   font-weight: 700;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+@media (max-width: 720px) {
+  .portfolioLinksWrapper {
+    margin: 10px;
+    margin-top: 0;
+    flex-direction: column;
+  }
+}
 .portfolioLinks {
   cursor: pointer;
+}
+@media (max-width: 720px) {
+  .portfolioLinks {
+    background: #65afff;
+    margin: 8px;
+    border-radius: 3px;
+  }
 }
 .portfolioLinks a {
   text-decoration: none;
   color: #65afff;
+}
+@media (max-width: 720px) {
+  .portfolioLinks a {
+    color: white;
+  }
 }
 .portfolioWebDevSub {
   text-align: center;
@@ -1605,6 +1628,11 @@ img .responsive-img {
 .comingSoon {
   color: red !important;
   cursor: auto !important;
+}
+@media (max-width: 720px) {
+  .comingSoon {
+    display: none;
+  }
 }
 .oldPBCLink {
   cursor: pointer;
@@ -1673,6 +1701,11 @@ div.panel {
   -webkit-box-shadow: none;
   box-shadow: none;
   margin-bottom: 0;
+}
+@media (max-width: 720px) {
+  div.panel {
+    padding: 0;
+  }
 }
 .panel p {
   font-family: 'Muli';

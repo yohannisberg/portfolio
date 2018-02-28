@@ -329,6 +329,15 @@ header {
                 margin: 0;
                 margin:10px 0;
             }
+
+            .type-of-site{
+                i{
+                    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+                    letter-spacing: .3px;
+
+                }
+            }
+
             p {
                 // .serif-font;
                 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1080,15 +1089,32 @@ img .responsive-img{
   font-weight: 700;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
+  @media (max-width: 720px) {
+    margin: 10px;
+    margin-top: 0;
+    flex-direction: column;
+    }
+
 }
 
 .portfolioLinks{
 cursor: pointer;
+
+@media (max-width: 720px) {
+        background: #65afff;
+        margin: 8px;
+        border-radius: 3px;
+    }
+
 }
 
 .portfolioLinks a{
 text-decoration: none;
 color: #65afff;
+
+@media (max-width: 720px) {
+        color: white;
+    }
 }
 
 .portfolioWebDevSub{
@@ -1113,6 +1139,10 @@ color: #65afff;
 .comingSoon{
   color: red !important;
   cursor: auto !important;
+
+  @media (max-width: 720px) {
+    display: none;
+    }
 }
 
 .oldPBCLink{
@@ -1200,6 +1230,10 @@ button.accordion {
         -webkit-box-shadow: none;
         box-shadow: none;
         margin-bottom:0;
+
+        @media(max-width:720px) {
+            padding: 0;
+        }
     }
     
     .panel p{
