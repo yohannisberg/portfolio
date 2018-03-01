@@ -1659,6 +1659,12 @@ img .responsive-img {
   left: 21px;
   margin-bottom: 10px;
 }
+@media (max-width: 720px) {
+  .displayDescription img {
+    left: 0;
+    width: 83%;
+  }
+}
 .displayDescription :nth-child(1) {
   height: auto;
 }
